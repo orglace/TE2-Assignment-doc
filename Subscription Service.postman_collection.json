@@ -1,0 +1,125 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Subscription Service",
+		"_postman_id": "9119c521-40e6-b14f-34d9-3fda97184003",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/subscriptions/list",
+			"request": {
+				"url": "http://localhost:8080/subscription/list",
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/subscription/1",
+			"request": {
+				"url": "http://localhost:8080/subscription/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/subscription/",
+			"request": {
+				"url": "http://localhost:8080/subscription/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"email_address3_new@example.com\",\n    \"subscriptionTypes\": [\n        {\n        \t\"type\": \"Business\"\n        },\n        {\n        \t\"type\": \"Sport\"\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/subscription/1",
+			"request": {
+				"url": "http://localhost:8080/subscription/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"email_address1_updated@example.com\",\n    \"subscriptionTypes\": [\n        {\n            \"type\": \"Politic\"\n        },\n        {\n            \n            \"type\": \"Health\"\n        }\n    ]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/subscription/1/report",
+			"request": {
+				"url": "http://localhost:8080/subscription/1/report",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/post/list",
+			"request": {
+				"url": "http://localhost:8080/post/list",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/post/",
+			"request": {
+				"url": "http://localhost:8080/post/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Post Title exampe\",\n    \"body\": \"Post Body example\",\n    \"postClassification\": {\n        \"type\": \"Tech\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
