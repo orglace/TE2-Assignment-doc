@@ -25,6 +25,7 @@ This is a Spring Boot Microservice solution. In the next secctions I'll gonna ex
 Requirement to run the microservice:
 * Java 8
 * Maven
+* CURL
 
 To run and test this solution please make the following steps.
 
@@ -240,5 +241,5 @@ So if you check the report for the first subscription again, you gonna see that 
 }
 ```
 
-
-
+## Additionals resource
+* If you would like to use **Postman** to test the API, [here](https://github.com/orglace/TE2-Assignment-doc/blob/master/Subscription%20Service.postman_collection.json) you can download the postman collections for this API.
